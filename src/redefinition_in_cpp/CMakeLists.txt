@@ -1,0 +1,1 @@
+add_executable(redefinition-in-cpp bar.cpp foo.cpp main.cpp)
