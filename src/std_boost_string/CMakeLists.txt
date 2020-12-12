@@ -1,0 +1,1 @@
+add_executable(std-boost-string main.cpp std_string_queue.cpp boost_string_queue.cpp)
