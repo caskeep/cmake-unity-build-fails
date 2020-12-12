@@ -1,4 +1,5 @@
 #include <boost/container/string.hpp>
+#include <boost/lockfree/spsc_queue.hpp>
 
 namespace my_lock_free_api {
 
@@ -10,6 +11,9 @@ public:
   bool dequeue(boost::container::string &content);
 
 private:
+  boost::lockfree::spsc_queue<boost::container::string,
+                              boost::lockfree::capacity<100>>
+      queue_;
 };
 
 } // namespace my_lock_free_api

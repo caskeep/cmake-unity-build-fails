@@ -19,7 +19,7 @@ void boost_string_queue() {
   assert(my_queue.inqueue("content2"));
   boost::container::string queue_first_content;
   assert(my_queue.dequeue(queue_first_content));
-  // assert(queue_first_content == "content1");
+  assert(queue_first_content == "content1");
 }
 
 int main() {
