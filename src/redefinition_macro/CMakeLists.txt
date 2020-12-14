@@ -1,0 +1,1 @@
+add_executable(redefinition-macro bar.cpp foo.cpp main.cpp)
